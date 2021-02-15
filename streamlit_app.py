@@ -30,6 +30,17 @@ TL_GAN_HASH_FUNCS = {
 # st.write("This is not my original work. :)"
 
 def main():
+    favicon = './favicon.png'
+    st.set_page_config(page_title='DeepFake Detector', page_icon = favicon, initial_sidebar_state = 'auto')
+    # favicon being an object of the same kind as the one you should provide st.image() with (ie. a PIL array for example) or a string (url or local file path)
+
+    hide_footer_style = """
+        <style>
+        .reportview-container .main footer {visibility: hidden;}    
+        """
+    st.markdown(hide_footer_style, unsafe_allow_html=True)
+
+    st.write("This is not my original work. :)"
     st.title("Streamlit Face-GAN Demo")
     """This demo demonstrates  using [Nvidia's Progressive Growing of GANs](https://research.nvidia.com/publication/2017-10_Progressive-Growing-of) and 
     Shaobo Guan's [Transparent Latent-space GAN method](https://blog.insightdatascience.com/generating-custom-photo-realistic-faces-using-ai-d170b1b59255) 
