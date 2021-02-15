@@ -19,7 +19,7 @@ TL_GAN_HASH_FUNCS = {
 
 favicon = './favicon.png'
 
-st.set_page_config(page_title='DeepFake Detector', page_icon = favicon, initial_sidebar_state = 'auto')
+st.beta_set_page_config(page_title='DeepFake Detector', page_icon = favicon, initial_sidebar_state = 'auto')
 # favicon being an object of the same kind as the one you should provide st.image() with (ie. a PIL array for example) or a string (url or local file path)
 
 hide_footer_style = """
