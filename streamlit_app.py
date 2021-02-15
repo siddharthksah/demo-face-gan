@@ -17,17 +17,17 @@ TL_GAN_HASH_FUNCS = {
     tf.Session : id
 }
 
-favicon = './favicon.png'
-st.set_page_config(page_title='DeepFake Detector', page_icon = favicon, initial_sidebar_state = 'auto')
-# favicon being an object of the same kind as the one you should provide st.image() with (ie. a PIL array for example) or a string (url or local file path)
+# favicon = './favicon.png'
+# st.set_page_config(page_title='DeepFake Detector', page_icon = favicon, initial_sidebar_state = 'auto')
+# # favicon being an object of the same kind as the one you should provide st.image() with (ie. a PIL array for example) or a string (url or local file path)
 
-hide_footer_style = """
-    <style>
-    .reportview-container .main footer {visibility: hidden;}    
-    """
-st.markdown(hide_footer_style, unsafe_allow_html=True)
+# hide_footer_style = """
+#     <style>
+#     .reportview-container .main footer {visibility: hidden;}    
+#     """
+# st.markdown(hide_footer_style, unsafe_allow_html=True)
 
-st.write("This is not my original work. :)"
+# st.write("This is not my original work. :)"
 
 def main():
     st.title("Streamlit Face-GAN Demo")
