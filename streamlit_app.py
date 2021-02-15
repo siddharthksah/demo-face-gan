@@ -17,6 +17,8 @@ TL_GAN_HASH_FUNCS = {
     tf.Session : id
 }
 
+st.write("This is not my original work. :)"
+
 def main():
     st.title("Streamlit Face-GAN Demo")
     """This demo demonstrates  using [Nvidia's Progressive Growing of GANs](https://research.nvidia.com/publication/2017-10_Progressive-Growing-of) and 
