@@ -28,7 +28,7 @@ hide_footer_style = """
     """
 st.markdown(hide_footer_style, unsafe_allow_html=True)
 
-st.write("This is not my original work.")
+st.text("[This is not my original work. Credits to Streamlit! :)]")
 
 def main():
 #     favicon = './favicon.png'
